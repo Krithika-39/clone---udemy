@@ -82,6 +82,14 @@ body{
     color: white;
     padding:10px;
     border-radius: 30px;
+    border: solid #892DE1 1px;
+}
+.categories p:hover{
+    transition:1s;
+    background-color: #892DE1 ;
+    /* color:#4F1106; */
+    color:#F7C81A; 
+    border: solid grey 1px;
 }
 .sale-image{
     position: relative;
@@ -98,7 +106,23 @@ body{
     position:absolute;
     top:10%;
     left:5%;
+    animation-name:zoom;
+    animation-duration: 2s;
+     opacity:0; 
+     animation-fill-mode: forwards;
+    
 }  
+@keyframes zoom {
+    0%{
+       transform: scale(0);
+       opacity:0;
+    }
+    100%{
+        transform: scale(1);
+        opacity:1; 
+
+    }
+}
 .recommended{
     padding:10px;
 
